@@ -15,9 +15,13 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import android.widget.ListView;
 
+import com.google.android.gms.maps.CameraUpdate;
+import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.MarkerOptions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -157,6 +161,8 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
 
     @Override
     public void onMapReady(@NonNull GoogleMap googleMap) {
-
+        LatLng location = new LatLng(20.980945537565102, 105.78768203432068);
+        googleMap.addMarker(new MarkerOptions().position(location).title("PTIT"));
+        googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(location, 12));
     }
 }
