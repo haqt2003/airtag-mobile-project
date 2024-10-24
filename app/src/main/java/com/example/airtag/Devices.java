@@ -77,6 +77,8 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
     TextView directionText;
     ImageView back;
 
+    private ImageView device1, device2, device3;
+
     private MapView mapView;
     private GoogleMap googleMap;
     private FusedLocationProviderClient fusedLocationClient;
@@ -177,6 +179,10 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
         dataList.add(new Device("Redmi Watch 2 Lite", "Active 1hr ago", R.drawable.device_icon));
         dataList.add(new Device("Raspberry 4", "Pending", R.drawable.ras));
 
+        device1 = findViewById(R.drawable.device_icon1);
+        device2 = findViewById(R.drawable.device_icon);
+        device3 = findViewById(R.drawable.ras);
+
         MyAdapterDevices adapter = new MyAdapterDevices(this, dataList);
         listView.setAdapter(adapter);
 
@@ -200,7 +206,7 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
                 back.setVisibility(View.GONE);
             }
         });
-
+        
         direction.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -279,6 +285,15 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
             getCurrentLocationAndMoveCamera();
         } else {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
+        }
+    }
+    private void moveCameraAndAddMarker(LatLng latLng, String title) {
+        if (googleMap != null) {
+            googleMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 15));
+            googleMap.addMarker(new MarkerOptions()
+                    .position(latLng)
+                    .title(title)
+                    .icon(BitmapDescriptorFactory.fromResource(R.drawable.device_icon)));
         }
     }
     private void getCurrentLocationAndMoveCamera() {

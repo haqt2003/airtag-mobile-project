@@ -92,21 +92,21 @@ public class History extends AppCompatActivity {
         List<Item> itemList = new ArrayList<>();
 
         // Thêm dữ liệu vào itemList
-        itemList.add(new Item("Redmi Note 11 pro", "24/09/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "02/01/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "03/01/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/09/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "02/01/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "03/01/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/09/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "02/01/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "03/01/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/09/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "02/01/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "03/01/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/09/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "02/01/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "03/01/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art", "10:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art", "11:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "10:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "11:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "10:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art", "11:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art", "10:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "21/10/2024", "Museum of contemporary Art", "11:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "21/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art", "10:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art", "11:00"));
+        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
 
         // Sử dụng CustomAdapter
         MyAdapterHistory adapter = new MyAdapterHistory(this, itemList);
