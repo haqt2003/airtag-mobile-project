@@ -225,8 +225,9 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
                         if (location != null) {
                             LatLng currentLocation = new LatLng(location.getLatitude(), location.getLongitude());
                             drawRoute(currentLocation, destination);
-                            moveCameraToLocation(currentLocation);
+                            // moveCameraToLocation(currentLocation);
                             addCurrentLocationMarker(currentLocation);
+                            showDistance(currentLocation, destination); 
                         }
                     }
                 });
@@ -260,6 +261,13 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
                     .title("Current Location")
                     .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_BLUE)));
         }
+    }
+     private void showDistance(LatLng start, LatLng end) {
+        float[] results = new float[1];
+        Location.distanceBetween(start.latitude, start.longitude, end.latitude, end.longitude, results);
+        float distanceInMeters = results[0];
+        String distanceText = String.format("Distance: %.2f meters", distanceInMeters);
+        Toast.makeText(Devices.this, distanceText, Toast.LENGTH_LONG).show();
     }
      @Override
     public void onMapReady(@NonNull GoogleMap map) {
