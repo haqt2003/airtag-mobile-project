@@ -85,10 +85,7 @@ public class Add_Items extends AppCompatActivity  implements OnMapReadyCallback 
             mapFragment.getMapAsync(this);
         }
 
-//        boolean hasPermission = (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED);
-//        if (!hasPermission) {
-//            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, REQUEST_WRITE_STORAGE);
-//        }
+
         
         editTextText = findViewById(R.id.editTextText);
 
@@ -165,7 +162,7 @@ public class Add_Items extends AppCompatActivity  implements OnMapReadyCallback 
             @Override
             public void onClick(View v) {
                 String inputText = editTextText.getText().toString();
-                String message = "Add devices: " + inputText + " - Encode: SG9hbmczMTQxNTk=";
+                String message = "Add devices: " + inputText + " - Encode: gmByY4e2vT2jj8vDz61NsPRydhLKUQYxZ/iUlA==";
                 Toast.makeText(Add_Items.this, message, Toast.LENGTH_SHORT).show();
 
                 // Insert file into MediaStore and request write permission

@@ -53,7 +53,7 @@ public class SignUp extends AppCompatActivity {
             public void onClick(View view) {
                 String emailInput = email.getText().toString();
                 sendEmail(emailInput);
-                Intent intent = new Intent(SignUp.this, Devices.class);
+                Intent intent = new Intent(SignUp.this, Login.class);
                 startActivity(intent);
                 finish();
             }
@@ -99,7 +99,7 @@ public class SignUp extends AppCompatActivity {
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 if (response.isSuccessful()) {
-                    runOnUiThread(() -> Toast.makeText(SignUp.this, "Email sent successfully", Toast.LENGTH_SHORT).show());
+                    runOnUiThread(() -> Toast.makeText(SignUp.this, "Account register successfully", Toast.LENGTH_SHORT).show());
                 } else {
                     Log.e(TAG, "Email sending failed: " + response.code());
                     runOnUiThread(() -> Toast.makeText(SignUp.this, "Failed to send email", Toast.LENGTH_SHORT).show());

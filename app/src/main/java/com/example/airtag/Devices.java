@@ -175,13 +175,13 @@ public class Devices extends AppCompatActivity implements OnMapReadyCallback {
         back = findViewById(R.id.back);
 
         // Thêm dữ liệu vào dataList
-        dataList.add(new Device("Redmi Note 11 pro", "Active 2d ago", R.drawable.device_icon1));
+        dataList.add(new Device("Samsung Note 20", "Active 12m ago", R.drawable.device_icon1));
         dataList.add(new Device("Redmi Watch 2 Lite", "Active 1hr ago", R.drawable.device_icon));
         dataList.add(new Device("Raspberry 4", "Pending", R.drawable.ras));
 
-        device1 = findViewById(R.drawable.device_icon1);
-        device2 = findViewById(R.drawable.device_icon);
-        device3 = findViewById(R.drawable.ras);
+//        device1 = findViewById(R.drawable.device_icon1);
+//        device2 = findViewById(R.drawable.device_icon);
+//        device3 = findViewById(R.drawable.ras);
 
         MyAdapterDevices adapter = new MyAdapterDevices(this, dataList);
         listView.setAdapter(adapter);

@@ -92,21 +92,21 @@ public class History extends AppCompatActivity {
         List<Item> itemList = new ArrayList<>();
 
         // Thêm dữ liệu vào itemList
-        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "24/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "23/10/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "22/10/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "21/10/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "21/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art", "10:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art", "11:00"));
-        itemList.add(new Item("Redmi Note 11 pro", "20/10/2024", "Museum of contemporary Art The Rock Pitt St Tower ", "12:00"));
+        itemList.add(new Item("Samsung Note 20", "25/10/2024", "Posts and Telecommunications Institute of Technology", "09:34"));
+        itemList.add(new Item("Samsung Note 20", "25/10/2024", "Tops Market Hà Đông", "07:24"));
+        itemList.add(new Item("Samsung Note 20", "24/10/2024", "20.9808822,105.7502131", "21:17"));
+        itemList.add(new Item("Samsung Note 20", "24/10/2024", "20.982485,105.7534751", "20:58"));
+        itemList.add(new Item("Samsung Note 20", "24/10/2024", "Bò Tơ Quán Mộc Hà Đông", "20:32"));
+        itemList.add(new Item("Samsung Note 20", "24/10/2024", "20.987288,105.7763111", "17:12"));
+        itemList.add(new Item("Samsung Note 20", "23/10/2024", "Sân Bóng Trung Văn", "09:14"));
+        itemList.add(new Item("Samsung Note 20", "22/10/2024", "20.985388,105.77631145", "16:10"));
+        itemList.add(new Item("Samsung Note 20", "22/10/2024", "21.932488,104.7763111", "12:16"));
+        itemList.add(new Item("Samsung Note 20", "22/10/2024", "The Light Apartment", "10:03"));
+        itemList.add(new Item("Samsung Note 20", "21/10/2024", "VP 91 Khuất Duy Tiến (Big C Mỹ Đình)", "09:34"));
+        itemList.add(new Item("Samsung Note 20", "21/10/2024", "Trạm Xăng Dầu Nguyễn Quý Đức ", "07:21"));
+        itemList.add(new Item("Samsung Note 20", "20/10/2024", "Me Tri Dormitory", "04:06"));
+        itemList.add(new Item("Samsung Note 20", "20/10/2024", "20.985388,105.77631145", "18:00"));
+        itemList.add(new Item("Samsung Note 20", "20/10/2024", "20.985388,105.77631145 ", "15:26"));
 
         // Sử dụng CustomAdapter
         MyAdapterHistory adapter = new MyAdapterHistory(this, itemList);
